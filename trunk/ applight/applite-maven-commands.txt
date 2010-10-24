@@ -1,0 +1,3 @@
+mvn archetype:create -DgroupId=com.dj.applite -DartifactId=applite -DarchetypeArtifactId=maven-archetype-webapp
+mvn install:install-file -Dfile=C:\Users\Jacob\development\google-guice\extensions\persist\build\guice-persist-snapshot.jar -DgroupId=com.google.inject.extensions -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging>
+

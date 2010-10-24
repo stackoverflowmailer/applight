@@ -1,0 +1,373 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.dj.applite:applite:war:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.google.inject:guice:jar -> duplicate declaration of version ${guice.version} @ line 91, column 15
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.google.inject:guice:jar -> duplicate declaration of version ${guice.version} @ line 117, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building applite Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for aopalliance:aopalliance:jar:3.0-201010161730 is missing, no dependency information available
+[WARNING] The POM for com.google.inject:guice:jar:3.0-201010161730 is missing, no dependency information available
+[WARNING] The POM for com.google.inject.extensions:guice-servlet:jar:3.0-201010161730 is missing, no dependency information available
+[WARNING] The POM for com.google.inject.extensions:guice-persist:jar:3.0-201010161730 is missing, no dependency information available
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ applite ---
+[INFO] Deleting C:\Users\Jacob\development\applite\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ applite ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ applite ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 14 source files to C:\Users\Jacob\development\applite\target\classes
+[INFO] 
+[INFO] --- aspectj-maven-plugin:1.3:compile (default) @ applite ---
+[WARNING] advice defined in com.dj.applite.aspects.SubResourceExecutionAspect has not been applied [Xlint:adviceDidNotMatch]
+[WARNING] advice defined in com.dj.applite.aspects.RootResourceInitializationAspect has not been applied [Xlint:adviceDidNotMatch]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ applite ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Jacob\development\applite\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ applite ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 4 source files to C:\Users\Jacob\development\applite\target\test-classes
+[INFO] 
+[INFO] --- aspectj-maven-plugin:1.3:test-compile (default) @ applite ---
+[WARNING] No sources found skipping aspectJ compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ applite ---
+[INFO] Surefire report directory: C:\Users\Jacob\development\applite\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.dj.applite.subject.SubjectResourceTest
+19:58:33,148 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:58:33,149 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:58:33,149 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/Jacob/development/applite/target/classes/logback.xml]
+19:58:33,248 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:58:33,269 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:58:33,275 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+19:58:33,336 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+19:58:33,336 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+19:58:33,336 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+19:58:33,336 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:58:33,339 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+19:58:33,367 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+19:58:33,369 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern logFile.%d{yyyy-MM-dd}.log for the active file
+19:58:33,376 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logFile.%d{yyyy-MM-dd}.log'.
+19:58:33,376 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+19:58:33,381 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sat Oct 23 19:58:13 SGT 2010
+19:58:33,384 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+19:58:33,384 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+19:58:33,384 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+19:58:33,384 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logFile.log
+19:58:33,384 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logFile.log]
+19:58:33,387 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.dj.applite] to true
+19:58:33,387 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - com.dj.applite level set to DEBUG
+19:58:33,387 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to DEBUG
+19:58:33,387 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+19:58:33,390 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+
+273  [main] DEBUG com.dj.applite.JettyTestContainer - ======== Starting the embedded Jetty Server Sat Oct 23 19:58:33 SGT 2010
+323  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+323  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@64633e5e + SelectChannelConnector@0.0.0.0:8080 as connector
+339  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@64633e5e + ServletContextHandler@1c5d9084@1c5d9084/,null as handler
+359  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-1247017815=com.google.inject.servlet.GuiceFilter-1247017815}
+360  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-1247017815]
+360  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+361  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap=null
+361  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={}
+380  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-1247017815=com.google.inject.servlet.GuiceFilter-1247017815}
+381  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-1247017815]
+381  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+381  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap={/=org.eclipse.jetty.servlet.DefaultServlet-88416491}
+381  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={org.eclipse.jetty.servlet.DefaultServlet-88416491=org.eclipse.jetty.servlet.DefaultServlet-88416491}
+382  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.Server@64633e5e
+382  [main] INFO  org.eclipse.jetty.util.log.Slf4jLog - jetty-7.1.6.v20100715
+400  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@64633e5e + qtp431709193{8<=0<=0/254,-1} as threadpool
+401  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting qtp431709193{8<=0<=0/254,-1}
+403  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED qtp431709193{8<=6<=8/254,0}
+408  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting ServletContextHandler@1c5d9084@1c5d9084/,null
+440  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletContextHandler@1c5d9084@1c5d9084/,null + SessionHandler@51b4a74b@ as handler
+441  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@2b5356d5@ + com.google.inject.servlet.GuiceFilter-1247017815 as filter
+441  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@2b5356d5@ + [/*]/[]==0=>com.google.inject.servlet.GuiceFilter-1247017815 as filterMapping
+442  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@2b5356d5@ + org.eclipse.jetty.servlet.DefaultServlet-88416491 as servlet
+442  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@2b5356d5@ + [/]=>org.eclipse.jetty.servlet.DefaultServlet-88416491 as servletMapping
+443  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container SessionHandler@51b4a74b@ + ServletHandler@2b5356d5@ as handler
+443  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container SessionHandler@51b4a74b@ + org.eclipse.jetty.server.session.HashSessionManager@3e364641 as sessionManager
+444  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting SessionHandler@51b4a74b@
+444  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.session.HashSessionManager@3e364641
+448  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@64633e5e + org.eclipse.jetty.server.session.HashSessionIdManager@3b5e234c as sessionIdManager
+449  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.session.HashSessionIdManager@3b5e234c
+485  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.session.HashSessionIdManager@3b5e234c
+486  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.session.HashSessionManager@3e364641
+486  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting ServletHandler@2b5356d5@
+487  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-1247017815=com.google.inject.servlet.GuiceFilter-1247017815}
+487  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-1247017815]
+487  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+487  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap={/=org.eclipse.jetty.servlet.DefaultServlet-88416491}
+488  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={org.eclipse.jetty.servlet.DefaultServlet-88416491=org.eclipse.jetty.servlet.DefaultServlet-88416491}
+488  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting ServletHandler@2b5356d5@
+488  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED ServletHandler@2b5356d5@
+488  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting SessionHandler@51b4a74b@
+489  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED SessionHandler@51b4a74b@
+489  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting ServletContextHandler@1c5d9084@1c5d9084/,null
+817  [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting com.google.inject.servlet.GuiceFilter-1247017815
+Oct 23, 2010 7:58:33 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  com.dj.applite.fund.resource
+  com.dj.applite.subject.resource
+  org.codehaus.jackson.jaxrs
+Oct 23, 2010 7:58:34 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class com.dj.applite.subject.resource.SubjectResource
+  class com.dj.applite.fund.resource.FundResource
+Oct 23, 2010 7:58:34 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.codehaus.jackson.jaxrs.JsonMappingExceptionMapper
+  class org.codehaus.jackson.jaxrs.JsonParseExceptionMapper
+  class org.codehaus.jackson.jaxrs.JacksonJsonProvider
+  class org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider
+Oct 23, 2010 7:58:34 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.4 09/11/2010 10:30 PM'
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.sun.jersey.server.impl.container.servlet.JSPTemplateProcessor
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JsonMappingExceptionMapper
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JsonParseExceptionMapper
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JacksonJsonProvider
+======================================= 
+Oct 23, 2010 7:58:34 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding com.dj.applite.fund.resource.FundResource to GuiceInstantiatedComponentProvider
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.server.spi.component.ResourceComponentProvider com.sun.jersey.server.impl.resource.PerRequestFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.dj.applite.subject.resource.SubjectResource
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.server.spi.component.ResourceComponentProvider com.sun.jersey.server.impl.resource.SingletonFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.sun.jersey.server.impl.wadl.WadlResource
+======================================= 
+1863 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED com.google.inject.servlet.GuiceFilter-1247017815
+1863 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.servlet.DefaultServlet-88416491
+1864 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Holding class org.eclipse.jetty.servlet.DefaultServlet
+1865 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.servlet.DefaultServlet-88416491
+1865 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED ServletContextHandler@1c5d9084@1c5d9084/,null
+1866 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting org.eclipse.jetty.server.Server@64633e5e
+1866 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting SelectChannelConnector@0.0.0.0:8080
+1866 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.nio.SelectChannelConnector$1@355c6c8d
+1885 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$1@355c6c8d
+1887 [main] INFO  org.eclipse.jetty.util.log.Slf4jLog - Started SelectChannelConnector@0.0.0.0:8080
+1887 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED SelectChannelConnector@0.0.0.0:8080
+org.eclipse.jetty.server.Server@64633e5e STOPPED
+ +-ServletContextHandler@1c5d9084@1c5d9084/,null started
+    +-SessionHandler@51b4a74b started
+       +-ServletHandler@2b5356d5 started
+          +-[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-1247017815{}
+          +-[/]=>org.eclipse.jetty.servlet.DefaultServlet-88416491{}
+
+1888 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.Server@64633e5e
+1888 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Started the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+1889 [main] DEBUG com.dj.applite.subject.SubjectResourceTest - About to test subjects having id...
+2103 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - REQUEST /ajax/subject/id/100 on org.eclipse.jetty.server.nio.SelectChannelConnector$2@33a998c7
+2103 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@3e364641
+2104 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - session=null
+2104 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servlet=org.eclipse.jetty.servlet.DefaultServlet-88416491
+2104 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servlet holder=
+2105 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - chain=
+2105 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - call filter com.google.inject.servlet.GuiceFilter-1247017815
+Instiated SubjectResource...
+2380 [qtp431709193-17 - /ajax/subject/id/100] DEBUG org.eclipse.jetty.util.log.Slf4jLog - RESPONSE /ajax/subject/id/100  200
+2424 [main] DEBUG com.dj.applite.subject.SubjectResourceTest - Resulting subject : WrappedResponse{success=true, totalResults=0, model=com.dj.applite.subject.model.Subject@d89d7eb}
+2425 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Stopping the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+2426 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.nio.SelectChannelConnector$1@355c6c8d
+2426 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED SelectChannelConnector@0.0.0.0:8080
+2427 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping org.eclipse.jetty.server.Server@64633e5e
+2427 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping ServletContextHandler@1c5d9084@1c5d9084/,null
+2427 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping SessionHandler@51b4a74b@
+2428 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping ServletHandler@2b5356d5@
+2428 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED com.google.inject.servlet.GuiceFilter-1247017815
+2429 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.servlet.DefaultServlet-88416491
+2429 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED ServletHandler@2b5356d5@
+2429 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.session.HashSessionManager@3e364641
+2429 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED SessionHandler@51b4a74b@
+2430 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED ServletContextHandler@1c5d9084@1c5d9084/,null
+2430 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.session.HashSessionIdManager@3b5e234c
+2482 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED qtp431709193{8<=0<=0/254,2}
+2482 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.Server@64633e5e
+2482 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Stopped the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.648 sec
+Running com.dj.applite.fund.resource.FundResourceTest
+2499 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Starting the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+2499 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@7746df77 + SelectChannelConnector@0.0.0.0:8080 as connector
+2500 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@7746df77 + ServletContextHandler@4df93ace@4df93ace/,null as handler
+2500 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-629396064=com.google.inject.servlet.GuiceFilter-629396064}
+2500 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-629396064]
+2500 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+2500 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap=null
+2501 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={}
+2501 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-629396064=com.google.inject.servlet.GuiceFilter-629396064}
+2501 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-629396064]
+2502 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+2502 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap={/=org.eclipse.jetty.servlet.DefaultServlet-1902686173}
+2502 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={org.eclipse.jetty.servlet.DefaultServlet-1902686173=org.eclipse.jetty.servlet.DefaultServlet-1902686173}
+2502 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.Server@7746df77
+2503 [main] INFO  org.eclipse.jetty.util.log.Slf4jLog - jetty-7.1.6.v20100715
+2503 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@7746df77 + qtp267522134{8<=0<=0/254,-1} as threadpool
+2503 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting qtp267522134{8<=0<=0/254,-1}
+2504 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED qtp267522134{8<=7<=8/254,0}
+2505 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting ServletContextHandler@4df93ace@4df93ace/,null
+2505 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletContextHandler@4df93ace@4df93ace/,null + SessionHandler@dd0feea@ as handler
+2505 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@140fbbbc@ + com.google.inject.servlet.GuiceFilter-629396064 as filter
+2505 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@140fbbbc@ + [/*]/[]==0=>com.google.inject.servlet.GuiceFilter-629396064 as filterMapping
+2506 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@140fbbbc@ + org.eclipse.jetty.servlet.DefaultServlet-1902686173 as servlet
+2506 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container ServletHandler@140fbbbc@ + [/]=>org.eclipse.jetty.servlet.DefaultServlet-1902686173 as servletMapping
+2506 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container SessionHandler@dd0feea@ + ServletHandler@140fbbbc@ as handler
+2507 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container SessionHandler@dd0feea@ + org.eclipse.jetty.server.session.HashSessionManager@14ee3dee as sessionManager
+2507 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting SessionHandler@dd0feea@
+2507 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.session.HashSessionManager@14ee3dee
+2508 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Container org.eclipse.jetty.server.Server@7746df77 + org.eclipse.jetty.server.session.HashSessionIdManager@2523defe as sessionIdManager
+2508 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.session.HashSessionIdManager@2523defe
+2508 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.session.HashSessionIdManager@2523defe
+2509 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.session.HashSessionManager@14ee3dee
+2509 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting ServletHandler@140fbbbc@
+2510 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - filterNameMap={com.google.inject.servlet.GuiceFilter-629396064=com.google.inject.servlet.GuiceFilter-629396064}
+2510 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - pathFilters=[[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-629396064]
+2510 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletFilterMap=org.eclipse.jetty.util.MultiMap@0
+2510 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletPathMap={/=org.eclipse.jetty.servlet.DefaultServlet-1902686173}
+2511 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servletNameMap={org.eclipse.jetty.servlet.DefaultServlet-1902686173=org.eclipse.jetty.servlet.DefaultServlet-1902686173}
+2511 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting ServletHandler@140fbbbc@
+2511 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED ServletHandler@140fbbbc@
+2511 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting SessionHandler@dd0feea@
+2512 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED SessionHandler@dd0feea@
+2512 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting ServletContextHandler@4df93ace@4df93ace/,null
+2521 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting com.google.inject.servlet.GuiceFilter-629396064
+Oct 23, 2010 7:58:35 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  com.dj.applite.fund.resource
+  com.dj.applite.subject.resource
+  org.codehaus.jackson.jaxrs
+Oct 23, 2010 7:58:35 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class com.dj.applite.subject.resource.SubjectResource
+  class com.dj.applite.fund.resource.FundResource
+Oct 23, 2010 7:58:35 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.codehaus.jackson.jaxrs.JsonMappingExceptionMapper
+  class org.codehaus.jackson.jaxrs.JsonParseExceptionMapper
+  class org.codehaus.jackson.jaxrs.JacksonJsonProvider
+  class org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider
+Oct 23, 2010 7:58:35 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.4 09/11/2010 10:30 PM'
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.sun.jersey.server.impl.container.servlet.JSPTemplateProcessor
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JsonMappingExceptionMapper
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JsonParseExceptionMapper
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.core.spi.component.ioc.IoCComponentProvider com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory.getComponentProvider(java.lang.Class)
+Matched                  : org.codehaus.jackson.jaxrs.JacksonJsonProvider
+======================================= 
+Oct 23, 2010 7:58:35 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding com.dj.applite.fund.resource.FundResource to GuiceInstantiatedComponentProvider
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.server.spi.component.ResourceComponentProvider com.sun.jersey.server.impl.resource.PerRequestFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.dj.applite.subject.resource.SubjectResource
+======================================= 
+======================================= 
+ComponentProviderFactory : public com.sun.jersey.server.spi.component.ResourceComponentProvider com.sun.jersey.server.impl.resource.SingletonFactory.getComponentProvider(java.lang.Class)
+Matched                  : com.sun.jersey.server.impl.wadl.WadlResource
+======================================= 
+2724 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED com.google.inject.servlet.GuiceFilter-629396064
+2725 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.servlet.DefaultServlet-1902686173
+2725 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Holding class org.eclipse.jetty.servlet.DefaultServlet
+2725 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.servlet.DefaultServlet-1902686173
+2726 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED ServletContextHandler@4df93ace@4df93ace/,null
+2726 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - starting org.eclipse.jetty.server.Server@7746df77
+2726 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting SelectChannelConnector@0.0.0.0:8080
+2726 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - Starting org.eclipse.jetty.server.nio.SelectChannelConnector$1@57e2793d
+2728 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$1@57e2793d
+2728 [main] INFO  org.eclipse.jetty.util.log.Slf4jLog - Started SelectChannelConnector@0.0.0.0:8080
+2729 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED SelectChannelConnector@0.0.0.0:8080
+org.eclipse.jetty.server.Server@7746df77 STOPPED
+ +-ServletContextHandler@4df93ace@4df93ace/,null started
+    +-SessionHandler@dd0feea started
+       +-ServletHandler@140fbbbc started
+          +-[/*]/[]==0=>com.google.inject.servlet.GuiceFilter-629396064{}
+2729 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STARTED org.eclipse.jetty.server.Server@7746df77
+          +-[/]=>org.eclipse.jetty.servlet.DefaultServlet-1902686173{}
+
+2729 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Started the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+2730 [main] DEBUG com.dj.applite.fund.resource.FundResourceTest - About to test funds for the year...
+2804 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - REQUEST /ajax/fund/year/2010 on org.eclipse.jetty.server.nio.SelectChannelConnector$2@2a44b7f7
+2804 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - sessionManager=org.eclipse.jetty.server.session.HashSessionManager@14ee3dee
+2804 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - session=null
+2805 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servlet=org.eclipse.jetty.servlet.DefaultServlet-1902686173
+2805 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - servlet holder=
+2805 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - chain=
+2805 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - call filter com.google.inject.servlet.GuiceFilter-629396064
+2806 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG com.dj.applite.fund.resource.FundResource - Inside c'ntr FundResource : com.dj.applite.fund.service.impl.FundServiceImpl@415b15ab
+2825 [qtp267522134-21 - /ajax/fund/year/2010] DEBUG org.eclipse.jetty.util.log.Slf4jLog - RESPONSE /ajax/fund/year/2010  200
+2829 [main] DEBUG com.dj.applite.fund.resource.FundResourceTest - Resulting fund : WrappedResponse{success=true, totalResults=1, model=[Fund{startDate=Sat Oct 23 19:58:35 SGT 2010, endDate=Sat Oct 23 19:58:35 SGT 2010, remarks='For Misc. expenses', minAmt=100, maxAmt=null, actAmt=null}]}
+2830 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Stopping the embedded Jetty Server Sat Oct 23 19:58:35 SGT 2010
+2830 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.nio.SelectChannelConnector$1@57e2793d
+2831 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED SelectChannelConnector@0.0.0.0:8080
+2831 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping org.eclipse.jetty.server.Server@7746df77
+2831 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping ServletContextHandler@4df93ace@4df93ace/,null
+2831 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping SessionHandler@dd0feea@
+2831 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - stopping ServletHandler@140fbbbc@
+2832 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED com.google.inject.servlet.GuiceFilter-629396064
+2832 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.servlet.DefaultServlet-1902686173
+2832 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED ServletHandler@140fbbbc@
+2832 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.session.HashSessionManager@14ee3dee
+2832 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED SessionHandler@dd0feea@
+2833 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED ServletContextHandler@4df93ace@4df93ace/,null
+2833 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.session.HashSessionIdManager@2523defe
+2884 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED qtp267522134{8<=0<=0/254,5}
+2884 [main] DEBUG org.eclipse.jetty.util.log.Slf4jLog - STOPPED org.eclipse.jetty.server.Server@7746df77
+2884 [main] DEBUG com.dj.applite.JettyTestContainer - ======== Stopped the embedded Jetty Server Sat Oct 23 19:58:36 SGT 2010
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.140s
+[INFO] Finished at: Sat Oct 23 19:58:36 SGT 2010
+[INFO] Final Memory: 23M/206M
+[INFO] ------------------------------------------------------------------------
